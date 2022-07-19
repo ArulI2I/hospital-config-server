@@ -1,3 +1,3 @@
 user:
   details:
-    uri: http://localhost:8080/api/auth/users
+    uri: http://localhost:8080/
