@@ -4,6 +4,10 @@ jwt:
       uri: /authenticate
   secret: javainuse
 spring:
+  cache:
+    type: redis
+    redis:
+      cache-null-values: 'true'
   datasource:
     username: ${username}
     url: jdbc:mysql://localhost:3306/training?useSSL=false
