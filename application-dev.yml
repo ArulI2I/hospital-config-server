@@ -2,7 +2,7 @@ jwt:
   get:
     token:
       uri: /authenticate
-  secret: javainuse
+  secret: ${jwtsecret}
 cache:
   host: localhost
   port: 6379
