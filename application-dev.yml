@@ -3,6 +3,12 @@ jwt:
     token:
       uri: /authenticate
   secret: javainuse
+cache:
+  host: localhost
+  port: 6379
+  default-ttl: 6000
+  caches-ttl:
+    photo: 3600
 spring:
   cache:
     type: redis
