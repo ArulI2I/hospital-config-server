@@ -1,0 +1,28 @@
+jwt:
+  get:
+    token:
+      uri: /authenticate
+  secret: ${jwtsecret}
+cache:
+  host: localhost
+  port: 6379
+  default-ttl: 6000
+  caches-ttl:
+    photo: 3600
+spring:
+  cache:
+    type: redis
+    redis:
+      cache-null-values: 'true'
+  datasource:
+    username: ${username}
+    url: jdbc:mysql://localhost:3306/training?useSSL=false
+    password: ${password}
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
+server:
+  port: '8185'
