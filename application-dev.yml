@@ -4,7 +4,7 @@ jwt:
       uri: /authenticate
   secret: javainuse
 cache:
-  host: localhost
+  host: 192.168.1.25
   port: 6379
   default-ttl: 6000
   caches-ttl:
@@ -16,7 +16,7 @@ spring:
       cache-null-values: 'true'
   datasource:
     username: root
-    url: jdbc:mysql://localhost:3306/training?useSSL=false
+    url: jdbc:mysql://192.168.1.25:3306/training?allowPublicKeyRetrieval=true&useSSL=false
     password: root
   jpa:
     properties:
