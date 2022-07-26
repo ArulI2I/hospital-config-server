@@ -10,8 +10,6 @@ cache:
   caches-ttl:
     photo: 3600
 spring:
-  profiles:
-    active: uat
   cache:
     type: redis
     redis:
