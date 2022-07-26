@@ -2,7 +2,7 @@ jwt:
   get:
     token:
       uri: /authenticate
-  secret: ${jwtsecret}
+  secret: javainuse
 cache:
   host: 192.168.1.25
   port: 6379
@@ -15,9 +15,9 @@ spring:
     redis:
       cache-null-values: 'true'
   datasource:
-    username: ${username}
+    username: root
     url: jdbc:mysql://192.168.1.25:3306/training?allowPublicKeyRetrieval=true&useSSL=false
-    password: ${password}
+    password: root
   jpa:
     properties:
       hibernate:
