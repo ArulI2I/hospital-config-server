@@ -4,14 +4,12 @@ jwt:
       uri: /authenticate
   secret: javainuse
 cache:
-  host: localhost
+  host: 127.0.0.1
   port: 6379
   default-ttl: 6000
   caches-ttl:
     photo: 3600
 spring:
-  profiles:
-    active: uat
   cache:
     type: redis
     redis:
